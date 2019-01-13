@@ -1,3 +1,19 @@
+# Live Stock Watch
+
+A real time data application to monitor stocks built using WebSocket and React-Redux architecture.
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/vijayyennam/live-stock-watch.git`
+2. Change the directory
+3. Install the application: `npm install`
+4. Run the application: `npm start`
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
