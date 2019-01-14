@@ -7,9 +7,9 @@ const loggerMiddleware = createLogger()
 
 export default preloadedState => {
     const middlewares = [thunkMiddleware];
-    if (process.env.REACT_APP_ENV !== "production") {
-        middlewares.push(loggerMiddleware);
-    }
+    // if (process.env.REACT_APP_ENV !== "production") {
+    //     middlewares.push(loggerMiddleware);
+    // }
     
     return createStore(rootReducer, preloadedState, applyMiddleware(...middlewares));
 };
