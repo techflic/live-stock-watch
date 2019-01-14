@@ -11,6 +11,10 @@ import { StocksList, Header } from "../../components";
 
 class Dashboard extends Component {
     componentDidMount() {
+        this.startSocketConnection();
+    }
+
+    startSocketConnection = () => {
         this.socket = new WebSocket(environments.BASE_URL);
         this.props.onSocketInitialization(this.socket);
 
@@ -22,13 +26,13 @@ class Dashboard extends Component {
             this.props.onSocketError(event);
         };
         this.socket.onmessage = event => {
-            console.log(event)
             this.props.onSocketMessage(JSON.parse(event.data));
         };
         this.socket.onclose = event => {
             this.props.onSocketClose(event);
+            setTimeout(() => this.startSocketConnection(), 5000);
         };
-    }
+    };
 
     componentWillUnmount() {
         this.socket.close();

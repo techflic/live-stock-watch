@@ -21,6 +21,7 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 connecting: false,
                 connected: true,
+                socket: {},
                 socketEvent: action.payload.event
             };
         case _socket.ON_CLOSE:
@@ -28,6 +29,7 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 connected: false,
                 connecting: true,
+                socket: {},
                 socketEvent: action.payload.event
             };
         case _socket.ON_ERROR:
@@ -35,6 +37,7 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 connected: false,
                 connecting: true,
+                socket: {},
                 socketEvent: action.payload.event
             };
         default:
