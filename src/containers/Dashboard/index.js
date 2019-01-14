@@ -22,6 +22,7 @@ class Dashboard extends Component {
             this.props.onSocketError(event);
         };
         this.socket.onmessage = event => {
+            console.log(event)
             this.props.onSocketMessage(JSON.parse(event.data));
         };
         this.socket.onclose = event => {

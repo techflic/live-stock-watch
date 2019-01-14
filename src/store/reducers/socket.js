@@ -1,6 +1,7 @@
 import { _socket } from "../constants";
 
 const INITIAL_STATE = {
+    socket: {},
     socketEvent: {},
     connecting: false,
     connected: false
@@ -25,11 +26,15 @@ export default (state = INITIAL_STATE, action) => {
         case _socket.ON_CLOSE:
             return {
                 ...state,
+                connected: false,
+                connecting: true,
                 socketEvent: action.payload.event
             };
         case _socket.ON_ERROR:
             return {
                 ...state,
+                connected: false,
+                connecting: true,
                 socketEvent: action.payload.event
             };
         default:
