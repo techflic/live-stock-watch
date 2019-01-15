@@ -12,7 +12,7 @@ A real time data application to monitor stocks built using WebSocket and React-R
 
 ## You can also visit below link for Demo
 
-[https://vijayyennam.github.io/live-stock-watch/]
+[https://vijayyennam.github.io/live-stock-watch/](https://vijayyennam.github.io/live-stock-watch/)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
