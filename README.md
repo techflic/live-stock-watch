@@ -10,6 +10,10 @@ A real time data application to monitor stocks built using WebSocket and React-R
 4. Run the application: `npm start`
 5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## You can also visit below link for Demo
+
+[https://vijayyennam.github.io/live-stock-watch/]
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
