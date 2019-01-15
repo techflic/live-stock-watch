@@ -7,4 +7,4 @@ const environments = {
     }
 }
 
-export default environments[process.env.REACT_APP_ENV] || environments["development"]
+export default environments[process.env.REACT_APP_ENV] || environments["production"]
